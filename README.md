@@ -1,0 +1,1202 @@
+[index.html](https://github.com/user-attachments/files/26211304/index.html)
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal desde 25 de Abril de 1974 — Linha Cronológica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO HEADER -->
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-flag">🇵🇹</div>
+        <h1>Portugal</h1>
+        <h2>Linha Cronológica desde o 25 de Abril de 1974</h2>
+        <p class="hero-subtitle">50 anos de democracia, presidentes, primeiros-ministros, acontecimentos históricos e partidos políticos</p>
+        <div class="hero-nav">
+            <a href="#timeline" class="btn-primary">Explorar Cronologia</a>
+            <a href="#presidentes" class="btn-secondary">Presidentes</a>
+            <a href="#primeiros-ministros" class="btn-secondary">Primeiros-Ministros</a>
+            <a href="#partidos" class="btn-secondary">Partidos Políticos</a>
+        </div>
+    </div>
+</header>
+
+<!-- NAVIGATION TABS -->
+<nav class="main-nav" id="main-nav">
+    <div class="nav-container">
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('timeline')">📅 Cronologia</button>
+            <button class="nav-tab" onclick="showSection('presidentes')">🏛️ Presidentes</button>
+            <button class="nav-tab" onclick="showSection('primeiros-ministros')">🏛️ Primeiros-Ministros</button>
+            <button class="nav-tab" onclick="showSection('partidos')">🗳️ Partidos Políticos</button>
+        </div>
+        <div class="filter-bar" id="filter-bar">
+            <span class="filter-label">Filtrar:</span>
+            <button class="filter-btn active" onclick="filterTimeline('all')">Todos</button>
+            <button class="filter-btn" onclick="filterTimeline('politica')">Política</button>
+            <button class="filter-btn" onclick="filterTimeline('catastrofe')">Catástrofes</button>
+            <button class="filter-btn" onclick="filterTimeline('economia')">Economia</button>
+            <button class="filter-btn" onclick="filterTimeline('internacional')">Internacional</button>
+            <button class="filter-btn" onclick="filterTimeline('social')">Social</button>
+        </div>
+    </div>
+</nav>
+
+<!-- TIMELINE SECTION -->
+<section id="timeline" class="section active">
+    <div class="section-header">
+        <h2>Cronologia de Portugal (1974–2026)</h2>
+        <p>Todos os momentos que definiram Portugal democrático, incluindo impactos da Guerra na Ucrânia</p>
+    </div>
+
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- 1974 -->
+        <div class="year-marker" id="y1974">1974</div>
+
+        <div class="timeline-item left catastrofe politica" data-year="1974">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">25 de Abril de 1974</div>
+                <div class="card-category politica">Política</div>
+                <h3>Revolução dos Cravos</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/abril_74.jpg" alt="Revolução dos Cravos" class="card-image" loading="lazy">
+                </div>
+                <p>O Movimento das Forças Armadas (MFA) derruba o regime ditatorial do Estado Novo, iniciando a transição para a democracia. Soldados recebem cravos vermelhos da população nas ruas de Lisboa. Fim de 48 anos de ditadura.</p>
+                <div class="card-tags"><span>Democracia</span><span>MFA</span><span>Liberdade</span></div>
+            </div>
+        </div>
+
+
+
+        <!-- 1975 -->
+        <div class="year-marker" id="y1975">1975</div>
+
+        <div class="timeline-item right politica" data-year="1975">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">25 de Abril de 1975</div>
+                <div class="card-category politica">Política</div>
+                <h3>Primeiras Eleições Livres — Assembleia Constituinte</h3>
+                <p>Realizadas as primeiras eleições livres em Portugal, para a Assembleia Constituinte. O PS obtém 37,9% dos votos, o PPD/PSD 26,4%, o PCP 12,5% e o CDS 7,7%. Participação histórica de 91,7%.</p>
+                <div class="card-tags"><span>Eleições</span><span>Democracia</span><span>Constituinte</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item left politica" data-year="1975">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">11 de Novembro de 1975</div>
+                <div class="card-category politica">Política</div>
+                <h3>Independência de Angola</h3>
+                <p>Angola torna-se independente de Portugal, após séculos de colonização. Juntamente com Moçambique (Junho 1975), Cabo Verde, S. Tomé e Príncipe, e Guiné-Bissau, marcam o fim do império colonial português.</p>
+                <div class="card-tags"><span>Descolonização</span><span>Angola</span></div>
+            </div>
+        </div>
+
+        <!-- 1976 -->
+        <div class="year-marker" id="y1976">1976</div>
+
+        <div class="timeline-item right politica" data-year="1976">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">2 de Abril de 1976</div>
+                <div class="card-category politica">Política</div>
+                <h3>Constituição da República Portuguesa</h3>
+                <p>Aprovada a Constituição da República Portuguesa, que estabelece o regime democrático, o Estado de Direito e os direitos fundamentais dos cidadãos. Ainda em vigor, foi revista 7 vezes (1982, 1989, 1992, 1997, 2001, 2004, 2005).</p>
+                <div class="card-tags"><span>Constituição</span><span>Democracia</span><span>Lei Fundamental</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item left politica" data-year="1976">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">27 de Julho de 1976</div>
+                <div class="card-category politica">Política</div>
+                <h3>Eanes eleito Presidente — 1.ª Eleição Presidencial</h3>
+                <div class="card-image-container">
+                    <img src="images/wpZxXSfi91KS.jpg" alt="General Eanes" class="card-image" loading="lazy">
+                </div>
+                <p>O General António Ramalho Eanes é eleito Presidente da República com 61,5% dos votos. Governa dois mandatos (1976–1986), sendo o primeiro presidente eleito por sufrágio universal direto na democracia portuguesa.</p>
+                <div class="card-tags"><span>Presidente</span><span>Eanes</span><span>Eleições</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right politica" data-year="1976">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">23 de Julho de 1976</div>
+                <div class="card-category politica">Política</div>
+                <h3>Mário Soares — 1.º Governo Constitucional</h3>
+                <p>Mário Soares (PS) torna-se o primeiro Primeiro-Ministro constitucional de Portugal, chefiando o I Governo Constitucional. Governa até julho de 1978, num período de grande instabilidade política.</p>
+                <div class="card-tags"><span>Primeiro-Ministro</span><span>PS</span><span>Soares</span></div>
+            </div>
+        </div>
+
+        <!-- 1978-1979 -->
+        <div class="year-marker" id="y1978">1978–1979</div>
+
+        <div class="timeline-item left politica" data-year="1978">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">1978–1980</div>
+                <div class="card-category politica">Política</div>
+                <h3>Período de Instabilidade Governativa</h3>
+                <p>Portugal atravessa um período de grande instabilidade com vários governos de curta duração: Nobre da Costa (1978), Mota Pinto (1978-79), Maria de Lurdes Pintassilgo (1979) — primeira mulher PM — e Diogo Freitas do Amaral (AD, 1980).</p>
+                <div class="card-tags"><span>Instabilidade</span><span>Governos</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right catastrofe" data-year="1979">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Fevereiro de 1979</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Cheias do Rio Tejo — 1979</h3>
+                <p>As maiores cheias do século XX na bacia do Rio Tejo afetam gravemente as regiões de Santarém, Abrantes e Lisboa. Milhares de famílias são evacuadas e dezenas de localidades ficam inundadas ao longo de semanas.</p>
+                <div class="card-tags"><span>Cheias</span><span>Tejo</span><span>Catástrofe</span></div>
+            </div>
+        </div>
+
+        <!-- 1980 -->
+        <div class="year-marker" id="y1980">1980</div>
+
+        <div class="timeline-item left catastrofe" data-year="1980">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">1 de Janeiro de 1980</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Terramoto dos Açores</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/terramoto_acores.jpg" alt="Terramoto Açores 1980" class="card-image" loading="lazy">
+                </div>
+                <p>Um sismo de magnitude 7,2 destrói grande parte da ilha Terceira nos Açores, matando 73 pessoas e ferindo mais de 400. Mais de 15.000 ficam sem abrigo. Angra do Heroísmo sofre danos gravíssimos.</p>
+                <div class="card-tags"><span>Sismo</span><span>Açores</span><span>73 mortos</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right politica" data-year="1980">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">4 de Dezembro de 1980</div>
+                <div class="card-category politica">Política</div>
+                <h3>Morte de Francisco Sá Carneiro</h3>
+                <p>O líder do PSD e Primeiro-Ministro Francisco Sá Carneiro morre num acidente de avião em Camarate, junto com Adelino Amaro da Costa. O acidente permanece envolto em mistério e foi alvo de várias investigações parlamentares ao longo dos anos.</p>
+                <div class="card-tags"><span>Camarate</span><span>PSD</span><span>Sá Carneiro</span></div>
+            </div>
+        </div>
+
+        <!-- 1983 -->
+        <div class="year-marker" id="y1983">1983</div>
+
+        <div class="timeline-item left catastrofe" data-year="1983">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Novembro de 1983</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Cheias em Lisboa, Loures e Cascais</h3>
+                <p>Cheias rápidas em áreas urbanas densas provocam 10 mortes na região de Lisboa, Loures e Cascais. Cerca de 1.800 famílias ficam desalojadas. As cheias afetam gravemente bairros periféricos da capital.</p>
+                <div class="card-tags"><span>Cheias</span><span>Lisboa</span><span>10 mortos</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right economia" data-year="1983">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">1983–1985</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Intervenção do FMI — 1.ª Crise Económica</h3>
+                <p>Portugal pede assistência ao FMI pela segunda vez (a primeira foi em 1977-78). O governo de Mário Soares (PS) implementa medidas de austeridade para estabilizar a economia. O desemprego e a inflação atingem valores elevados.</p>
+                <div class="card-tags"><span>FMI</span><span>Austeridade</span><span>Economia</span></div>
+            </div>
+        </div>
+
+        <!-- 1986 -->
+        <div class="year-marker" id="y1986">1986</div>
+
+        <div class="timeline-item left internacional" data-year="1986">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">1 de Janeiro de 1986</div>
+                <div class="card-category internacional">Internacional</div>
+                <h3>Portugal adere à CEE (União Europeia)</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/entrada_ue.jpg" alt="Portugal na CEE 1986" class="card-image" loading="lazy">
+                </div>
+                <p>Portugal adere à Comunidade Económica Europeia (CEE), juntamente com Espanha. A adesão marca uma viragem histórica no desenvolvimento económico e social do país, com acesso a fundos estruturais europeus.</p>
+                <div class="card-tags"><span>CEE</span><span>Europa</span><span>Integração</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right politica" data-year="1986">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">9 de Março de 1986</div>
+                <div class="card-category politica">Política</div>
+                <h3>Mário Soares eleito Presidente da República</h3>
+                <div class="card-image-container">
+                    <img src="images/tDufKjjsWNjx.jpg" alt="Mário Soares Presidente" class="card-image" loading="lazy">
+                </div>
+                <p>Mário Soares (PS) é eleito Presidente da República, tornando-se o primeiro presidente civil desde 1926. Governa dois mandatos até 1996, sendo um dos mais carismáticos presidentes da democracia portuguesa.</p>
+                <div class="card-tags"><span>Presidente</span><span>Soares</span><span>PS</span></div>
+            </div>
+        </div>
+
+        <!-- 1987 -->
+        <div class="year-marker" id="y1987">1987</div>
+
+        <div class="timeline-item left politica" data-year="1987">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">17 de Agosto de 1987</div>
+                <div class="card-category politica">Política</div>
+                <h3>Cavaco Silva — Maioria Absoluta do PSD</h3>
+                <p>Aníbal Cavaco Silva (PSD) conquista a primeira maioria absoluta da democracia portuguesa com 50,2% dos votos. Governa até 1995, num período de forte crescimento económico impulsionado pelos fundos europeus.</p>
+                <div class="card-tags"><span>PSD</span><span>Cavaco Silva</span><span>Maioria Absoluta</span></div>
+            </div>
+        </div>
+
+        <!-- 1989 -->
+        <div class="year-marker" id="y1989">1989</div>
+
+        <div class="timeline-item right catastrofe" data-year="1989">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">8 de Fevereiro de 1989</div>
+                <div class="card-category catastrofe">Acidente</div>
+                <h3>Acidente Aéreo em Santa Maria — 144 Mortos</h3>
+                <p>Um avião da Independent Air cai na ilha de Santa Maria, nos Açores, matando 144 pessoas. É um dos maiores acidentes aéreos da história de Portugal.</p>
+                <div class="card-tags"><span>Acidente Aéreo</span><span>Açores</span><span>144 mortos</span></div>
+            </div>
+        </div>
+
+        <!-- 1992 -->
+        <div class="year-marker" id="y1992">1992</div>
+
+        <div class="timeline-item left catastrofe" data-year="1992">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">21 de Dezembro de 1992</div>
+                <div class="card-category catastrofe">Acidente</div>
+                <h3>Acidente Aéreo no Aeroporto de Faro — 56 Mortos</h3>
+                <p>Um avião da Martinair cai no aeroporto de Faro durante uma tempestade, matando 56 pessoas. O acidente levanta questões sobre as condições de segurança do aeroporto algarvio.</p>
+                <div class="card-tags"><span>Acidente Aéreo</span><span>Faro</span><span>56 mortos</span></div>
+            </div>
+        </div>
+
+        <!-- 1995 -->
+        <div class="year-marker" id="y1995">1995</div>
+
+        <div class="timeline-item right politica" data-year="1995">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">28 de Outubro de 1995</div>
+                <div class="card-category politica">Política</div>
+                <h3>António Guterres — Governo do PS</h3>
+                <div class="card-image-container">
+                    <img src="images/ALbtBnszQVZS.jpg" alt="António Guterres" class="card-image" loading="lazy">
+                </div>
+                <p>António Guterres (PS) torna-se Primeiro-Ministro, iniciando um período de governação socialista. Governa até 2002, num período de crescimento económico e de preparação para o Euro. Mais tarde tornar-se-ia Secretário-Geral da ONU.</p>
+                <div class="card-tags"><span>PS</span><span>Guterres</span><span>Primeiro-Ministro</span></div>
+            </div>
+        </div>
+
+        <!-- 1996 -->
+        <div class="year-marker" id="y1996">1996</div>
+
+        <div class="timeline-item left politica" data-year="1996">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">9 de Março de 1996</div>
+                <div class="card-category politica">Política</div>
+                <h3>Jorge Sampaio eleito Presidente da República</h3>
+                <div class="card-image-container">
+                    <img src="images/uIpjK1PuFbmY.jpg" alt="Jorge Sampaio" class="card-image" loading="lazy">
+                </div>
+                <p>Jorge Sampaio (PS) é eleito Presidente da República com 53,8% dos votos, derrotando Cavaco Silva. Governa dois mandatos até 2006, sendo recordado pela sua posição contra a guerra do Iraque e pela gestão da crise política de 2004.</p>
+                <div class="card-tags"><span>Presidente</span><span>Sampaio</span><span>PS</span></div>
+            </div>
+        </div>
+
+        <!-- 1998 -->
+        <div class="year-marker" id="y1998">1998</div>
+
+        <div class="timeline-item right internacional" data-year="1998">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">22 de Maio de 1998</div>
+                <div class="card-category internacional">Internacional</div>
+                <h3>EXPO '98 em Lisboa</h3>
+                <div class="card-image-container">
+                    <img src="images/acontecimentos/expo98.jpg" alt="EXPO 98" class="card-image" loading="lazy">
+                </div>
+                <p>Lisboa acolhe a Exposição Mundial de 1998, sob o tema "Os Oceanos: Um Património para o Futuro". O evento transforma a zona oriental da cidade (Parque das Nações) e atrai mais de 10 milhões de visitantes.</p>
+                <div class="card-tags"><span>EXPO 98</span><span>Lisboa</span><span>Oceanos</span></div>
+            </div>
+        </div>
+
+        <!-- 1999 -->
+        <div class="year-marker" id="y1999">1999</div>
+
+        <div class="timeline-item left internacional" data-year="1999">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">20 de Dezembro de 1999</div>
+                <div class="card-category internacional">Internacional</div>
+                <h3>Entrega de Macau à China</h3>
+                <p>Portugal entrega a administração de Macau à República Popular da China, encerrando mais de 400 anos de presença portuguesa no território. É o último ato da descolonização portuguesa.</p>
+                <div class="card-tags"><span>Macau</span><span>China</span><span>Descolonização</span></div>
+            </div>
+        </div>
+
+        <!-- 2001 -->
+        <div class="year-marker" id="y2001">2001</div>
+
+        <div class="timeline-item right catastrofe" data-year="2001">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">4 de Março de 2001</div>
+                <div class="card-category catastrofe">Acidente</div>
+                <h3>Tragédia de Entre-os-Rios — 59 Mortos</h3>
+                <p>A ponte Hintze Ribeiro, em Entre-os-Rios, colapsa, provocando a queda de um autocarro e três automóveis no rio Douro. Morrem 59 pessoas. O Ministro Jorge Coelho demite-se assumindo a responsabilidade política.</p>
+                <div class="card-tags"><span>Entre-os-Rios</span><span>Ponte</span><span>59 mortos</span></div>
+            </div>
+        </div>
+
+        <!-- 2002 -->
+        <div class="year-marker" id="y2002">2002</div>
+
+        <div class="timeline-item left economia" data-year="2002">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">1 de Janeiro de 2002</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Entrada em circulação do Euro</h3>
+                <p>O Euro substitui o Escudo como moeda oficial de Portugal. A transição marca a integração plena na União Económica e Monetária europeia.</p>
+                <div class="card-tags"><span>Euro</span><span>Moeda</span><span>Economia</span></div>
+            </div>
+        </div>
+
+        <!-- 2003 -->
+        <div class="year-marker" id="y2003">2003</div>
+
+        <div class="timeline-item right catastrofe" data-year="2003">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Verão de 2003</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Grandes Incêndios Florestais — 2003</h3>
+                <p>Uma onda de calor extrema provoca os piores incêndios florestais da história de Portugal até então, ardendo mais de 425.000 hectares. Morrem 21 pessoas e os danos económicos são imensos.</p>
+                <div class="card-tags"><span>Incêndios</span><span>Calor</span><span>Catástrofe</span></div>
+            </div>
+        </div>
+
+        <!-- 2005 -->
+        <div class="year-marker" id="y2005">2005</div>
+
+        <div class="timeline-item left politica" data-year="2005">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">12 de Março de 2005</div>
+                <div class="card-category politica">Política</div>
+                <h3>José Sócrates — Maioria Absoluta do PS</h3>
+                <div class="card-image-container">
+                    <img src="images/BJbeBxUuwwMf.jpg" alt="José Sócrates" class="card-image" loading="lazy">
+                </div>
+                <p>José Sócrates (PS) conquista a primeira maioria absoluta do Partido Socialista. Governa até 2011, num período marcado por grandes investimentos públicos e, mais tarde, pela crise financeira.</p>
+                <div class="card-tags"><span>PS</span><span>Sócrates</span><span>Maioria Absoluta</span></div>
+            </div>
+        </div>
+
+        <!-- 2006 -->
+        <div class="year-marker" id="y2006">2006</div>
+
+        <div class="timeline-item right politica" data-year="2006">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">9 de Março de 2006</div>
+                <div class="card-category politica">Política</div>
+                <h3>Cavaco Silva eleito Presidente da República</h3>
+                <div class="card-image-container">
+                    <img src="images/wy1bbJ9zuvbd.jpg" alt="Cavaco Silva Presidente" class="card-image" loading="lazy">
+                </div>
+                <p>Aníbal Cavaco Silva (PSD) é eleito Presidente da República à primeira volta com 50,6% dos votos. É o primeiro presidente de centro-direita eleito por sufrágio direto na democracia.</p>
+                <div class="card-tags"><span>Presidente</span><span>Cavaco Silva</span><span>PSD</span></div>
+            </div>
+        </div>
+
+        <!-- 2008 -->
+        <div class="year-marker" id="y2008">2008</div>
+
+        <div class="timeline-item left economia" data-year="2008">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Novembro de 2008</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Colapso do BPN e BPP — Crise Bancária</h3>
+                <p>O Banco Português de Negócios (BPN) é nacionalizado após a descoberta de fraudes massivas. Pouco depois, o Banco Privado Português (BPP) entra em colapso. É o início de uma grave crise no setor bancário português.</p>
+                <div class="card-tags"><span>BPN</span><span>BPP</span><span>Crise Bancária</span></div>
+            </div>
+        </div>
+
+        <!-- 2010 -->
+        <div class="year-marker" id="y2010">2010</div>
+
+        <div class="timeline-item right catastrofe" data-year="2010">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">20 de Fevereiro de 2010</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Aluvião na Ilha da Madeira — 42 Mortos</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/cheias_madeira.jpg" alt="Aluvião Madeira 2010" class="card-image" loading="lazy">
+                </div>
+                <p>Chuvas torrenciais provocam inundações e deslizamentos de terra devastadores na ilha da Madeira, especialmente no Funchal. Morrem 42 pessoas e os prejuízos materiais superam os mil milhões de euros.</p>
+                <div class="card-tags"><span>Madeira</span><span>Aluvião</span><span>42 mortos</span></div>
+            </div>
+        </div>
+
+        <!-- 2011 -->
+        <div class="year-marker" id="y2011">2011</div>
+
+        <div class="timeline-item left economia" data-year="2011">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">6 de Abril de 2011</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Pedido de Resgate à Troika (FMI/UE/BCE)</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/protesto_troika.jpg" alt="Protesto Troika" class="card-image" loading="lazy">
+                </div>
+                <p>O Primeiro-Ministro José Sócrates anuncia o pedido de assistência financeira internacional. Portugal recebe um empréstimo de 78 mil milhões de euros em troca de um programa de austeridade severo.</p>
+                <div class="card-tags"><span>Troika</span><span>Resgate</span><span>Austeridade</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right politica" data-year="2011">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">21 de Junho de 2011</div>
+                <div class="card-category politica">Política</div>
+                <h3>Passos Coelho — Governo de Coligação PSD/CDS</h3>
+                <div class="card-image-container">
+                    <img src="images/z3dygyqKNdgf.jpg" alt="Passos Coelho" class="card-image" loading="lazy">
+                </div>
+                <p>Pedro Passos Coelho (PSD) torna-se Primeiro-Ministro, liderando um governo de coligação com o CDS-PP. O mandato é marcado pela implementação das medidas da Troika e por fortes protestos sociais.</p>
+                <div class="card-tags"><span>PSD</span><span>Passos Coelho</span><span>Austeridade</span></div>
+            </div>
+        </div>
+
+        <!-- 2014 -->
+        <div class="year-marker" id="y2014">2014</div>
+
+        <div class="timeline-item left economia" data-year="2014">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">3 de Agosto de 2014</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Colapso do Banco Espírito Santo (BES)</h3>
+                <p>O Banco de Portugal anuncia a resolução do BES, após a descoberta de irregularidades graves no Grupo Espírito Santo. O banco é dividido em "banco bom" (Novo Banco) e "banco mau".</p>
+                <div class="card-tags"><span>BES</span><span>Ricardo Salgado</span><span>Crise Bancária</span></div>
+            </div>
+        </div>
+
+        <!-- 2015 -->
+        <div class="year-marker" id="y2015">2015</div>
+
+        <div class="timeline-item right politica" data-year="2015">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">26 de Novembro de 2015</div>
+                <div class="card-category politica">Política</div>
+                <h3>António Costa — Governo da "Geringonça"</h3>
+                <div class="card-image-container">
+                    <img src="images/eYAUcDouH2iS.png" alt="António Costa" class="card-image" loading="lazy">
+                </div>
+                <p>António Costa (PS) torna-se Primeiro-Ministro através de um acordo parlamentar inédito com o BE, PCP e PEV, conhecido como "Geringonça". O governo foca-se na reversão de medidas de austeridade.</p>
+                <div class="card-tags"><span>PS</span><span>António Costa</span><span>Geringonça</span></div>
+            </div>
+        </div>
+
+        <!-- 2016 -->
+        <div class="year-marker" id="y2016">2016</div>
+
+        <div class="timeline-item left politica" data-year="2016">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">9 de Março de 2016</div>
+                <div class="card-category politica">Política</div>
+                <h3>Marcelo Rebelo de Sousa eleito Presidente</h3>
+                <div class="card-image-container">
+                    <img src="images/SDKEn0xcUBW6.jpg" alt="Marcelo Rebelo de Sousa" class="card-image" loading="lazy">
+                </div>
+                <p>Marcelo Rebelo de Sousa (PSD) é eleito Presidente da República à primeira volta com 52% dos votos. O seu estilo de proximidade e "afetos" marca uma nova era na presidência portuguesa.</p>
+                <div class="card-tags"><span>Presidente</span><span>Marcelo</span><span>Afetos</span></div>
+            </div>
+        </div>
+
+        <!-- 2017 -->
+        <div class="year-marker" id="y2017">2017</div>
+
+        <div class="timeline-item right catastrofe" data-year="2017">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">17 de Junho de 2017</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Tragédia de Pedrógão Grande — 66 Mortos</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/incendio_pedrogao.jpg" alt="Incêndio Pedrógão Grande" class="card-image" loading="lazy">
+                </div>
+                <p>Um incêndio florestal devastador em Pedrógão Grande provoca a morte de 66 pessoas, muitas delas presas na Estrada Nacional 236-1. É a maior tragédia humana em incêndios florestais em Portugal.</p>
+                <div class="card-tags"><span>Pedrógão Grande</span><span>Incêndios</span><span>66 mortos</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item left catastrofe" data-year="2017">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">15 de Outubro de 2017</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Incêndios de Outubro — 45 Mortos</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/incendios_2017.jpg" alt="Incêndios Outubro 2017" class="card-image" loading="lazy">
+                </div>
+                <p>Uma nova vaga de incêndios florestais atinge o centro e norte de Portugal, provocando 45 mortos. A tragédia leva à demissão da Ministra da Administração Interna, Constança Urbano de Sousa.</p>
+                <div class="card-tags"><span>Incêndios</span><span>Outubro</span><span>45 mortos</span></div>
+            </div>
+        </div>
+
+        <!-- 2020 -->
+        <div class="year-marker" id="y2020">2020</div>
+
+        <div class="timeline-item right social" data-year="2020">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Março de 2020</div>
+                <div class="card-category social">Saúde Pública</div>
+                <h3>Pandemia de COVID-19 em Portugal</h3>
+                <div class="card-image-container">
+                    <img src="acontecimentos/covid_2020.jpg" alt="COVID-19 Portugal" class="card-image" loading="lazy">
+                </div>
+                <p>Portugal entra em Estado de Emergência pela primeira vez na democracia devido à pandemia de COVID-19. O país enfrenta sucessivos confinamentos e uma crise sanitária e económica sem precedentes.</p>
+                <div class="card-tags"><span>COVID-19</span><span>Pandemia</span><span>Confinamento</span></div>
+            </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="year-marker" id="y2022">2022</div>
+
+        <div class="timeline-item left politica" data-year="2022">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">30 de Janeiro de 2022</div>
+                <div class="card-category politica">Política</div>
+                <h3>António Costa — Maioria Absoluta do PS</h3>
+                <p>António Costa conquista a segunda maioria absoluta da história do PS nas eleições legislativas antecipadas. O governo enfrenta desafios como a inflação e crises em setores como a saúde e habitação.</p>
+                <div class="card-tags"><span>PS</span><span>António Costa</span><span>Maioria Absoluta</span></div>
+            </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="year-marker" id="y2024">2024</div>
+
+        <div class="timeline-item right politica" data-year="2024">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">2 de Abril de 2024</div>
+                <div class="card-category politica">Política</div>
+                <h3>Luís Montenegro — Governo da AD</h3>
+                <div class="card-image-container">
+                    <img src="images/auamPdvSwa4j.jpg" alt="Luís Montenegro" class="card-image" loading="lazy">
+                </div>
+                <p>Luís Montenegro (PSD) torna-se Primeiro-Ministro, liderando um governo de coligação minoritária da Aliança Democrática (PSD/CDS/PPM) após as eleições legislativas de Março.</p>
+                <div class="card-tags"><span>PSD</span><span>AD</span><span>Montenegro</span></div>
+            </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="year-marker" id="y2022b">2022 — Guerra na Ucrânia</div>
+
+        <div class="timeline-item left economia" data-year="2022">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">24 de Fevereiro de 2022</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Invasão da Ucrânia — Impactos Económicos em Portugal</h3>
+                <p>A invasão russa da Ucrânia desencadeia uma crise energética e alimentar global. Portugal enfrenta uma inflação histórica, com os preços da energia e alimentos a atingirem níveis record. A inflação chega aos 10% em 2022, a mais elevada em décadas.</p>
+                <div class="card-tags"><span>Ucrânia</span><span>Inflação</span><span>Energia</span><span>Alimentos</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right economia" data-year="2022">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">2022–2023</div>
+                <div class="card-category economia">Economia</div>
+                <h3>Crise Energética — Preços de Energia em Espiral</h3>
+                <p>Os preços do gás natural e eletricidade explodem na Europa. Portugal implementa medidas de controlo de preços e apoios às famílias e empresas. A dependência de energia russa coloca a UE sob pressão, acelerando a transição para energias renováveis.</p>
+                <div class="card-tags"><span>Energia</span><span>Gás Natural</span><span>Eletricidade</span><span>Apoios</span></div>
+            </div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="year-marker" id="y2026">2026</div>
+
+        <div class="timeline-item left politica" data-year="2026">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">8 de Fevereiro de 2026</div>
+                <div class="card-category politica">Política</div>
+                <h3>António José Seguro eleito Presidente</h3>
+                <div class="card-image-container">
+                    <img src="images/antonio_jose_seguro.jpg" alt="António José Seguro" class="card-image" loading="lazy">
+                </div>
+                <p>António José Seguro vence a segunda volta das eleições presidenciais com 66,7% dos votos, derrotando André Ventura (Chega). A vitória marca o regresso de Seguro à política ativa após anos de ausência.</p>
+                <div class="card-tags"><span>Eleições</span><span>Seguro</span><span>Presidente</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item right catastrofe" data-year="2026">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">Janeiro–Fevereiro de 2026</div>
+                <div class="card-category catastrofe">Catástrofe Natural</div>
+                <h3>Inverno de Tempestades e Cheias Recorde</h3>
+                <p>Portugal é atingido por nove tempestades consecutivas nos primeiros dois meses do ano. Fevereiro de 2026 torna-se o mês mais chuvoso dos últimos 47 anos, causando inundações severas e danos estruturais em todo o país.</p>
+                <div class="card-tags"><span>Tempestades</span><span>Cheias</span><span>Clima</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item left politica" data-year="2026">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="card-date">9 de Março de 2026</div>
+                <div class="card-category politica">Política</div>
+                <h3>Tomada de Posse do Novo Presidente</h3>
+                <p>António José Seguro toma posse na Assembleia da República como o 21.º Presidente da República Portuguesa, sucedendo a Marcelo Rebelo de Sousa após 10 anos de mandato deste último.</p>
+                <div class="card-tags"><span>Posse</span><span>Belém</span><span>República</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRESIDENTES SECTION -->
+<section id="presidentes" class="section">
+    <div class="section-header">
+        <h2>Presidentes da República Portuguesa</h2>
+        <p>Todos os Presidentes desde o 25 de Abril de 1974</p>
+    </div>
+
+    <div class="persons-grid">
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/spinola.jpg" alt="António de Spínola" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>António de Spínola</h3>
+                <div class="person-dates">15 Mai 1974 — 30 Set 1974</div>
+                <div class="person-party independent">Independente (Militar)</div>
+                <p>General e herói da Guerra Colonial, liderou a Junta de Salvação Nacional após o 25 de Abril. Renunciou após tensões com o MFA. Autor do livro "Portugal e o Futuro" (1974).</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/costa_gomes.jpg" alt="Francisco da Costa Gomes" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>Francisco da Costa Gomes</h3>
+                <div class="person-dates">30 Set 1974 — 14 Jul 1976</div>
+                <div class="person-party independent">Independente (Militar)</div>
+                <p>Chefe do Estado-Maior das Forças Armadas, assumiu a presidência após a demissão de Spínola. Governou durante o turbulento PREC e supervisionou a transição para a democracia constitucional.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/eanes.jpg" alt="António Ramalho Eanes" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>António Ramalho Eanes</h3>
+                <div class="person-dates">14 Jul 1976 — 9 Mar 1986</div>
+                <div class="person-party independent">Independente (PRD)</div>
+                <p>Herói do 25 de Novembro de 1975, foi eleito com 61,5% dos votos. Governou dois mandatos, sendo o primeiro presidente eleito por sufrágio universal direto na democracia. Fundou o PRD em 1985.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/mario_soares_pres.jpg" alt="Mário Soares" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>Mário Soares</h3>
+                <div class="person-dates">9 Mar 1986 — 9 Mar 1996</div>
+                <div class="person-party ps">Partido Socialista</div>
+                <p>Primeiro presidente civil desde 1926. Fundador do PS, foi também Primeiro-Ministro (1976-78 e 1983-85). Governou dois mandatos presidenciais, sendo um dos mais carismáticos políticos da democracia portuguesa.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/jorge_sampaio.jpg" alt="Jorge Sampaio" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>Jorge Sampaio</h3>
+                <div class="person-dates">9 Mar 1996 — 9 Mar 2006</div>
+                <div class="person-party ps">Partido Socialista</div>
+                <p>Antigo presidente da Câmara de Lisboa, foi eleito com 53,8% dos votos. Governou dois mandatos, sendo recordado pela sua posição contra a guerra do Iraque (2003) e pela gestão da crise política de 2004.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/cavaco_silva_pres.jpg" alt="Aníbal Cavaco Silva" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>Aníbal Cavaco Silva</h3>
+                <div class="person-dates">9 Mar 2006 — 9 Mar 2016</div>
+                <div class="person-party psd">Partido Social Democrata</div>
+                <p>Antigo Primeiro-Ministro (1985-1995), foi eleito presidente à primeira volta com 50,6%. Governou dois mandatos durante a crise económica e a intervenção da Troika, sendo alvo de críticas pela sua gestão do período de austeridade.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/marcelo.jpg" alt="Marcelo Rebelo de Sousa" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>Marcelo Rebelo de Sousa</h3>
+                <div class="person-dates">9 Mar 2016 — 9 Mar 2026</div>
+                <div class="person-party psd">Partido Social Democrata</div>
+                <p>Professor universitário e comentador televisivo, foi eleito à primeira volta com 52% dos votos. Reeleito em 2021 com 60,7%. Conhecido pela proximidade com os cidadãos, pelos banhos de multidão e pelo estilo comunicativo informal.</p>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="person-photo">
+                <img src="presidentes_pm/antonio_jose_seguro.jpg" alt="António José Seguro" loading="lazy">
+            </div>
+            <div class="person-info">
+                <h3>António José Seguro</h3>
+                <div class="person-dates">9 Mar 2026 — presente</div>
+                <div class="person-party ps">Partido Socialista</div>
+                <p>Antigo Secretário-Geral do PS, regressou à vida política ativa para vencer as eleições presidenciais de 2026 na segunda volta contra André Ventura. Tomou posse como o 21.º Presidente da República a 9 de Março de 2026.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRIMEIROS-MINISTROS SECTION -->
+<section id="primeiros-ministros" class="section">
+    <div class="section-header">
+        <h2>Primeiros-Ministros de Portugal</h2>
+        <p>Todos os Primeiros-Ministros desde o 25 de Abril de 1974</p>
+    </div>
+
+    <div class="pm-table-container">
+        <table class="pm-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Período</th>
+                    <th>Partido</th>
+                    <th>Governo(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Adelino da Palma Carlos</strong></td>
+                    <td>16 Mai 1974 — 18 Jul 1974</td>
+                    <td><span class="party-badge independent">Independente</span></td>
+                    <td>I Gov. Provisório</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Vasco dos Santos Gonçalves</strong></td>
+                    <td>18 Jul 1974 — 19 Set 1975</td>
+                    <td><span class="party-badge pcp">PCP (apoio)</span></td>
+                    <td>II, III, IV, V Gov. Provisório</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>José Baptista Pinheiro de Azevedo</strong></td>
+                    <td>19 Set 1975 — 23 Jul 1976</td>
+                    <td><span class="party-badge independent">Independente</span></td>
+                    <td>VI Gov. Provisório</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Mário Soares</strong></td>
+                    <td>23 Jul 1976 — 28 Jul 1978</td>
+                    <td><span class="party-badge ps">PS</span></td>
+                    <td>I e II Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Alfredo Nobre da Costa</strong></td>
+                    <td>28 Jul 1978 — 22 Nov 1978</td>
+                    <td><span class="party-badge independent">Independente</span></td>
+                    <td>III Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Carlos da Mota Pinto</strong></td>
+                    <td>22 Nov 1978 — 7 Jul 1979</td>
+                    <td><span class="party-badge psd">PSD</span></td>
+                    <td>IV Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>Maria de Lurdes Pintassilgo</strong></td>
+                    <td>7 Jul 1979 — 3 Jan 1980</td>
+                    <td><span class="party-badge independent">Independente</span></td>
+                    <td>V Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Francisco Sá Carneiro</strong></td>
+                    <td>3 Jan 1980 — 4 Dez 1980</td>
+                    <td><span class="party-badge psd">PSD (AD)</span></td>
+                    <td>VI Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>Diogo Freitas do Amaral</strong></td>
+                    <td>4 Dez 1980 — 9 Jan 1981</td>
+                    <td><span class="party-badge cds">CDS (AD)</span></td>
+                    <td>VI Gov. Constitucional (interino)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>Francisco Pinto Balsemão</strong></td>
+                    <td>9 Jan 1981 — 9 Jun 1983</td>
+                    <td><span class="party-badge psd">PSD (AD)</span></td>
+                    <td>VII e VIII Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>Mário Soares</strong></td>
+                    <td>9 Jun 1983 — 6 Nov 1985</td>
+                    <td><span class="party-badge ps">PS (C. Central)</span></td>
+                    <td>IX Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><strong>Aníbal Cavaco Silva</strong></td>
+                    <td>6 Nov 1985 — 28 Out 1995</td>
+                    <td><span class="party-badge psd">PSD</span></td>
+                    <td>X, XI e XII Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><strong>António Guterres</strong></td>
+                    <td>28 Out 1995 — 6 Abr 2002</td>
+                    <td><span class="party-badge ps">PS</span></td>
+                    <td>XIII e XIV Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><strong>José Manuel Durão Barroso</strong></td>
+                    <td>6 Abr 2002 — 17 Jul 2004</td>
+                    <td><span class="party-badge psd">PSD</span></td>
+                    <td>XV Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><strong>Pedro Santana Lopes</strong></td>
+                    <td>17 Jul 2004 — 12 Mar 2005</td>
+                    <td><span class="party-badge psd">PSD</span></td>
+                    <td>XVI Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><strong>José Sócrates</strong></td>
+                    <td>12 Mar 2005 — 21 Jun 2011</td>
+                    <td><span class="party-badge ps">PS</span></td>
+                    <td>XVII e XVIII Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td><strong>Pedro Passos Coelho</strong></td>
+                    <td>21 Jun 2011 — 26 Nov 2015</td>
+                    <td><span class="party-badge psd">PSD</span></td>
+                    <td>XIX e XX Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td><strong>António Costa</strong></td>
+                    <td>26 Nov 2015 — 2 Abr 2024</td>
+                    <td><span class="party-badge ps">PS</span></td>
+                    <td>XXI, XXII e XXIII Gov. Constitucional</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td><strong>Luís Montenegro</strong></td>
+                    <td>2 Abr 2024 — presente</td>
+                    <td><span class="party-badge psd">PSD (AD)</span></td>
+                    <td>XXIV Gov. Constitucional</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pm-photos-grid">
+        <h3>Galeria de Primeiros-Ministros</h3>
+        <div class="pm-gallery">
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/vasco_goncalves.jpg" alt="Vasco Gonçalves" loading="lazy">
+                <span>Vasco Gonçalves<br><small>1974–1975</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/mario_soares_pres.jpg" alt="Mário Soares PM" loading="lazy">
+                <span>Mário Soares<br><small>1976–78, 1983–85</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/cavaco_silva_pres.jpg" alt="Cavaco Silva PM" loading="lazy">
+                <span>Cavaco Silva<br><small>1985–1995</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/guterres_pm.jpg" alt="António Guterres PM" loading="lazy">
+                <span>António Guterres<br><small>1995–2002</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/jose_socrates.jpg" alt="José Sócrates PM" loading="lazy">
+                <span>José Sócrates<br><small>2005–2011</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/passos_coelho.jpg" alt="Passos Coelho PM" loading="lazy">
+                <span>Passos Coelho<br><small>2011–2015</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/antonio_costa.png" alt="António Costa PM" loading="lazy">
+                <span>António Costa<br><small>2015–2024</small></span>
+            </div>
+            <div class="pm-photo-item">
+                <img src="presidentes_pm/luis_montenegro.jpg" alt="Luís Montenegro PM" loading="lazy">
+                <span>Luís Montenegro<br><small>2024–presente</small></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTIDOS POLÍTICOS SECTION -->
+<section id="partidos" class="section">
+    <div class="section-header">
+        <h2>Partidos Políticos Portugueses</h2>
+        <p>Partidos atualmente registados com representação parlamentar ou histórica relevante</p>
+    </div>
+
+    <div class="parties-grid">
+
+        <div class="party-card psd-card">
+            <div class="party-header">
+                <div class="party-logo psd-logo">PSD</div>
+                <div class="party-title">
+                    <h3>Partido Social Democrata</h3>
+                    <span class="party-abbr">PPD/PSD</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 6 de Maio de 1974</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 17 de Janeiro de 1975</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Liberal-conservadorismo, Democracia cristã</div>
+                <div class="party-detail"><strong>Posição:</strong> Centro-direita</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Luís Montenegro</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 89/230</div>
+                <p class="party-desc">Fundado por Francisco Sá Carneiro e outros como PPD (Partido Popular Democrático), adotou a designação PSD em 1976. É um dos dois partidos dominantes da democracia portuguesa, tendo governado com maioria absoluta (1987-1995) e em coligação.</p>
+            </div>
+        </div>
+
+        <div class="party-card ps-card">
+            <div class="party-header">
+                <div class="party-logo ps-logo">PS</div>
+                <div class="party-title">
+                    <h3>Partido Socialista</h3>
+                    <span class="party-abbr">PS</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 19 de Abril de 1973 (Bad Münstereifel, Alemanha)</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 1 de Fevereiro de 1975</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Social-democracia, Progressismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Centro-esquerda</div>
+                <div class="party-detail"><strong>Líder atual:</strong> José Luís Carneiro</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 58/230</div>
+                <p class="party-desc">Fundado por Mário Soares no exílio, é o principal partido de centro-esquerda. Governou Portugal em múltiplos períodos, incluindo as maiorias absolutas de Sócrates (2005) e Costa (2022). Membro da Internacional Socialista e do PES.</p>
+            </div>
+        </div>
+
+        <div class="party-card chega-card">
+            <div class="party-header">
+                <div class="party-logo chega-logo">CH</div>
+                <div class="party-title">
+                    <h3>Chega</h3>
+                    <span class="party-abbr">CH</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 8 de Abril de 2019</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 9 de Abril de 2019</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Populismo de direita, Conservadorismo nacional</div>
+                <div class="party-detail"><strong>Posição:</strong> Extrema-direita</div>
+                <div class="party-detail"><strong>Líder atual:</strong> André Ventura</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 60/230</div>
+                <p class="party-desc">Fundado por André Ventura, cresceu rapidamente de 1 deputado em 2019 para 60 em 2025, tornando-se o terceiro maior partido. Defende políticas de lei e ordem, combate à corrupção e imigração controlada.</p>
+            </div>
+        </div>
+
+        <div class="party-card il-card">
+            <div class="party-header">
+                <div class="party-logo il-logo">IL</div>
+                <div class="party-title">
+                    <h3>Iniciativa Liberal</h3>
+                    <span class="party-abbr">IL</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 2017</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 13 de Dezembro de 2017</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Liberalismo clássico, Libertarismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Centro-direita a direita</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Mariana Leitão</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 9/230</div>
+                <p class="party-desc">Partido liberal fundado em 2017, defende a redução do Estado, livre mercado e liberdades individuais. Cresceu de 1 deputado em 2019 para 9 em 2025. Membro da ALDE europeia.</p>
+            </div>
+        </div>
+
+        <div class="party-card be-card">
+            <div class="party-header">
+                <div class="party-logo be-logo">BE</div>
+                <div class="party-title">
+                    <h3>Bloco de Esquerda</h3>
+                    <span class="party-abbr">B.E.</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 1999</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 24 de Março de 1999</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Socialismo democrático, Feminismo, Ecologismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Esquerda a extrema-esquerda</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Mariana Mortágua</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 1/230</div>
+                <p class="party-desc">Fundado pela fusão de vários partidos de esquerda (PSR, UDP, Política XXI), o BE tornou-se uma força relevante na esquerda portuguesa, chegando a 19 deputados em 2019. Apoiou o governo de António Costa (2015-2019).</p>
+            </div>
+        </div>
+
+        <div class="party-card pcp-card">
+            <div class="party-header">
+                <div class="party-logo pcp-logo">PCP</div>
+                <div class="party-title">
+                    <h3>Partido Comunista Português</h3>
+                    <span class="party-abbr">PCP</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 6 de Março de 1921</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 26 de Dezembro de 1974</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Comunismo, Marxismo-Leninismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Extrema-esquerda</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Paulo Raimundo</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 3/230</div>
+                <p class="party-desc">O mais antigo partido português ainda em atividade, fundado em 1921. Operou na clandestinidade durante o Estado Novo. Após o 25 de Abril, foi uma força relevante, chegando a 40 deputados em 1976. Integra a coligação CDU com o PEV.</p>
+            </div>
+        </div>
+
+        <div class="party-card cds-card">
+            <div class="party-header">
+                <div class="party-logo cds-logo">CDS</div>
+                <div class="party-title">
+                    <h3>CDS — Partido Popular</h3>
+                    <span class="party-abbr">CDS-PP</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 19 de Julho de 1974</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 13 de Janeiro de 1975</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Democracia cristã, Conservadorismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Centro-direita a direita</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Nuno Melo</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 2/230 (via AD)</div>
+                <p class="party-desc">Fundado por Diogo Freitas do Amaral, é o principal partido democrata-cristão português. Participou em vários governos de coligação com o PSD. Atualmente integra a Aliança Democrática (AD) liderada pelo PSD.</p>
+            </div>
+        </div>
+
+        <div class="party-card livre-card">
+            <div class="party-header">
+                <div class="party-logo livre-logo">L</div>
+                <div class="party-title">
+                    <h3>LIVRE</h3>
+                    <span class="party-abbr">L</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 2014</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 19 de Março de 2014</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Socialismo verde, Ecologismo, Progressismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Esquerda</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Rui Tavares</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 4/230</div>
+                <p class="party-desc">Fundado em 2014, o LIVRE é um partido de esquerda progressista e ecologista. Defende o Rendimento Básico Incondicional e uma integração europeia mais profunda. Elegeu o seu primeiro deputado em 2019.</p>
+            </div>
+        </div>
+
+        <div class="party-card pan-card">
+            <div class="party-header">
+                <div class="party-logo pan-logo">PAN</div>
+                <div class="party-title">
+                    <h3>Pessoas-Animais-Natureza</h3>
+                    <span class="party-abbr">PAN</span>
+                </div>
+            </div>
+            <div class="party-details">
+                <div class="party-detail"><strong>Fundação:</strong> 2009</div>
+                <div class="party-detail"><strong>Registo TC:</strong> 25 de Janeiro de 2011</div>
+                <div class="party-detail"><strong>Ideologia:</strong> Bem-estar animal, Ecologismo</div>
+                <div class="party-detail"><strong>Posição:</strong> Centro-esquerda</div>
+                <div class="party-detail"><strong>Líder atual:</strong> Inês Sousa Real</div>
+                <div class="party-detail"><strong>Deputados (2025):</strong> 1/230</div>
+                <p class="party-desc">Focado na causa animal e ambiental, o PAN elegeu o seu primeiro deputado em 2015. Defende uma mudança de paradigma na relação entre humanos e natureza.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="minor-parties">
+        <h3>Outros Partidos Registados</h3>
+        <div class="minor-parties-grid">
+            <div class="minor-party-item"><strong>PEV:</strong> Partido Ecologista "Os Verdes" (1982)</div>
+            <div class="minor-party-item"><strong>PPM:</strong> Partido Popular Monárquico (1974)</div>
+            <div class="minor-party-item"><strong>PCTP/MRPP:</strong> Partido Comunista dos Trabalhadores Portugueses (1970)</div>
+            <div class="minor-party-item"><strong>ADN:</strong> Alternativa Democrática Nacional (2014)</div>
+            <div class="minor-party-item"><strong>R.I.R.:</strong> Reagir Incluir Reciclar (2019)</div>
+            <div class="minor-party-item"><strong>Volt Portugal:</strong> Volt (2020)</div>
+            <div class="minor-party-item"><strong>MPT:</strong> Partido da Terra (1993)</div>
+            <div class="minor-party-item"><strong>Ergue-te:</strong> Antigo PNR (2000)</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">🇵🇹</div>
+    <h3>Portugal: 50 Anos de Democracia</h3>
+    <p>Linha cronológica interativa (1974–2026)</p>
+    <p class="footer-note">Dados recolhidos de fontes oficiais e históricas. Fotografias reais de domínio público.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
