@@ -1,0 +1,983 @@
+/* ============================================================
+   PORTUGAL TIMELINE — ESTILOS PRINCIPAIS
+   ============================================================ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --verde: #006600;
+    --vermelho: #CC0000;
+    --dourado: #D4AF37;
+    --azul-escuro: #1a2a4a;
+    --azul-medio: #2c4a7c;
+    --cinzento-claro: #f5f5f5;
+    --cinzento-medio: #e0e0e0;
+    --branco: #ffffff;
+    --texto-escuro: #1a1a2e;
+    --texto-medio: #4a4a6a;
+    --sombra: rgba(0,0,0,0.15);
+    --sombra-forte: rgba(0,0,0,0.3);
+
+    /* Cores dos partidos */
+    --cor-psd: #FF7F00;
+    --cor-ps: #FF0000;
+    --cor-chega: #202056;
+    --cor-il: #00AEEF;
+    --cor-be: #9B1A1A;
+    --cor-pcp: #CC0000;
+    --cor-cds: #003399;
+    --cor-livre: #00A651;
+    --cor-pan: #00A651;
+    --cor-pev: #2E7D32;
+    --cor-independent: #666;
+
+    /* Cores das categorias */
+    --cor-politica: #1565C0;
+    --cor-catastrofe: #C62828;
+    --cor-economia: #2E7D32;
+    --cor-internacional: #6A1B9A;
+    --cor-social: #E65100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--texto-escuro);
+    background: #f0f2f5;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   HERO HEADER
+   ============================================================ */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #006600 0%, #1a2a4a 40%, #CC0000 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="15" fill="rgba(255,255,255,0.03)"/><circle cx="80" cy="80" r="20" fill="rgba(255,255,255,0.03)"/><circle cx="60" cy="30" r="10" fill="rgba(255,255,255,0.02)"/></svg>');
+    background-size: 300px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 900px;
+}
+
+.hero-flag {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--vermelho);
+    color: white;
+    border: 2px solid var(--vermelho);
+    box-shadow: 0 4px 15px rgba(204,0,0,0.4);
+}
+
+.btn-primary:hover {
+    background: #aa0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(204,0,0,0.5);
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--azul-escuro);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.nav-tabs::-webkit-scrollbar { display: none; }
+
+.nav-tab {
+    padding: 1rem 1.5rem;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-tab:hover {
+    color: white;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-tab.active {
+    color: white;
+    border-bottom-color: var(--vermelho);
+    background: rgba(255,255,255,0.05);
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.filter-bar::-webkit-scrollbar { display: none; }
+
+.filter-label {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    padding: 0 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.3rem 0.9rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--vermelho);
+    border-color: var(--vermelho);
+    color: white;
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+
+.section {
+    display: none;
+    min-height: 80vh;
+    padding: 3rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section.active {
+    display: block;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--azul-escuro);
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: var(--texto-medio);
+    font-size: 1rem;
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+
+.timeline-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--verde), var(--azul-medio), var(--vermelho));
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.year-marker {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    background: var(--azul-escuro);
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.3rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 3px solid var(--dourado);
+}
+
+.timeline-item {
+    position: relative;
+    width: 46%;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item.left {
+    left: 0;
+    padding-right: 2rem;
+}
+
+.timeline-item.right {
+    left: 54%;
+    padding-left: 2rem;
+}
+
+.timeline-item.hidden {
+    display: none;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: var(--dourado);
+    border: 3px solid var(--azul-escuro);
+    border-radius: 50%;
+    top: 1.5rem;
+    z-index: 4;
+    box-shadow: 0 0 0 4px rgba(212,175,55,0.3);
+    transition: transform 0.3s;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -9px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -9px;
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.3);
+}
+
+.timeline-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px var(--sombra);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--cinzento-medio);
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--verde), var(--vermelho));
+}
+
+.timeline-item:hover .timeline-card {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px var(--sombra-forte);
+}
+
+.timeline-item.politica .timeline-card { border-left-color: var(--cor-politica); }
+.timeline-item.catastrofe .timeline-card { border-left-color: var(--cor-catastrofe); }
+.timeline-item.economia .timeline-card { border-left-color: var(--cor-economia); }
+.timeline-item.internacional .timeline-card { border-left-color: var(--cor-internacional); }
+.timeline-item.social .timeline-card { border-left-color: var(--cor-social); }
+
+.card-date {
+    font-size: 0.78rem;
+    color: var(--texto-medio);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3rem;
+}
+
+.card-category {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.7rem;
+    color: white;
+}
+
+.card-category.politica { background: var(--cor-politica); }
+.card-category.catastrofe { background: var(--cor-catastrofe); }
+.card-category.economia { background: var(--cor-economia); }
+.card-category.internacional { background: var(--cor-internacional); }
+.card-category.social { background: var(--cor-social); }
+
+.timeline-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--azul-escuro);
+    margin-bottom: 0.7rem;
+    line-height: 1.3;
+}
+
+.card-image-container {
+    margin: 0.7rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 160px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.timeline-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.timeline-card p {
+    font-size: 0.87rem;
+    color: var(--texto-medio);
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.7rem;
+}
+
+.card-tags span {
+    background: var(--cinzento-claro);
+    color: var(--texto-medio);
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+/* ============================================================
+   PRESIDENTES
+   ============================================================ */
+
+.persons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.person-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--sombra);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.person-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px var(--sombra-forte);
+}
+
+.person-photo {
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
+    position: relative;
+}
+
+.person-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.4s ease;
+}
+
+.person-card:hover .person-photo img {
+    transform: scale(1.05);
+}
+
+.person-info {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.person-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--azul-escuro);
+    margin-bottom: 0.4rem;
+}
+
+.person-dates {
+    font-size: 0.82rem;
+    color: var(--texto-medio);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.person-dates::before {
+    content: '📅';
+    font-size: 0.9rem;
+}
+
+.person-party {
+    display: inline-block;
+    padding: 0.25rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.person-party.ps { background: var(--cor-ps); }
+.person-party.psd { background: var(--cor-psd); }
+.person-party.independent { background: var(--cor-independent); }
+
+.person-info p {
+    font-size: 0.87rem;
+    color: var(--texto-medio);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   PRIMEIROS-MINISTROS TABLE
+   ============================================================ */
+
+.pm-table-container {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--sombra);
+    margin-bottom: 3rem;
+}
+
+.pm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.9rem;
+}
+
+.pm-table thead {
+    background: var(--azul-escuro);
+    color: white;
+}
+
+.pm-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pm-table td {
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid var(--cinzento-medio);
+    vertical-align: middle;
+}
+
+.pm-table tbody tr:hover {
+    background: #f8f9ff;
+}
+
+.pm-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.party-badge {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: white;
+}
+
+.party-badge.ps { background: var(--cor-ps); }
+.party-badge.psd { background: var(--cor-psd); }
+.party-badge.cds { background: var(--cor-cds); }
+.party-badge.pcp { background: var(--cor-pcp); }
+.party-badge.independent { background: var(--cor-independent); }
+
+/* PM Gallery */
+.pm-photos-grid {
+    margin-top: 2rem;
+}
+
+.pm-photos-grid h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pm-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.pm-photo-item {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pm-photo-item:hover {
+    transform: translateY(-4px);
+}
+
+.pm-photo-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--sombra);
+    margin-bottom: 0.5rem;
+}
+
+.pm-photo-item span {
+    font-size: 0.82rem;
+    color: var(--texto-escuro);
+    font-weight: 600;
+    display: block;
+}
+
+.pm-photo-item small {
+    color: var(--texto-medio);
+    font-size: 0.75rem;
+}
+
+/* ============================================================
+   PARTIDOS POLÍTICOS
+   ============================================================ */
+
+.parties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.party-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--sombra);
+    transition: all 0.3s ease;
+    border-top: 5px solid var(--cinzento-medio);
+}
+
+.party-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 35px var(--sombra-forte);
+}
+
+.psd-card { border-top-color: var(--cor-psd); }
+.ps-card { border-top-color: var(--cor-ps); }
+.chega-card { border-top-color: var(--cor-chega); }
+.il-card { border-top-color: var(--cor-il); }
+.be-card { border-top-color: var(--cor-be); }
+.pcp-card { border-top-color: var(--cor-pcp); }
+.cds-card { border-top-color: var(--cor-cds); }
+.livre-card { border-top-color: var(--cor-livre); }
+.pan-card { border-top-color: var(--cor-pan); }
+.pev-card { border-top-color: var(--cor-pev); }
+
+.party-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    background: var(--cinzento-claro);
+}
+
+.party-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1rem;
+    color: white;
+    flex-shrink: 0;
+    letter-spacing: -0.05em;
+}
+
+.psd-logo { background: var(--cor-psd); }
+.ps-logo { background: var(--cor-ps); }
+.chega-logo { background: var(--cor-chega); }
+.il-logo { background: var(--cor-il); }
+.be-logo { background: var(--cor-be); }
+.pcp-logo { background: var(--cor-pcp); }
+.cds-logo { background: var(--cor-cds); }
+.livre-logo { background: var(--cor-livre); }
+.pan-logo { background: var(--cor-pan); font-size: 0.85rem; }
+.pev-logo { background: var(--cor-pev); }
+
+.party-title h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: var(--azul-escuro);
+    margin-bottom: 0.2rem;
+}
+
+.party-abbr {
+    font-size: 0.78rem;
+    color: var(--texto-medio);
+    font-weight: 600;
+}
+
+.party-details {
+    padding: 1.2rem 1.5rem;
+}
+
+.party-detail {
+    font-size: 0.83rem;
+    color: var(--texto-medio);
+    margin-bottom: 0.4rem;
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.party-detail strong {
+    color: var(--texto-escuro);
+}
+
+.party-desc {
+    font-size: 0.85rem;
+    color: var(--texto-medio);
+    line-height: 1.6;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--cinzento-medio);
+}
+
+/* Minor Parties */
+.minor-parties {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px var(--sombra);
+}
+
+.minor-parties h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5rem;
+}
+
+.minor-parties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.minor-party-item {
+    background: var(--cinzento-claro);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--texto-medio);
+    border-left: 3px solid var(--azul-medio);
+}
+
+.minor-party-item strong {
+    color: var(--azul-escuro);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer {
+    background: var(--azul-escuro);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-note {
+    font-size: 0.78rem !important;
+    opacity: 0.5 !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .timeline-line {
+        left: 20px;
+    }
+
+    .year-marker {
+        left: 20px;
+        transform: none;
+        font-size: 1.3rem;
+    }
+
+    .timeline-item {
+        width: calc(100% - 50px);
+        left: 50px !important;
+        padding-left: 1.5rem !important;
+        padding-right: 0 !important;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: -9px;
+        right: auto;
+    }
+
+    .persons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .parties-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pm-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tabs {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .pm-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .minor-parties-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   ANIMAÇÕES
+   ============================================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-item, .person-card, .party-card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Scroll reveal */
+.timeline-item.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================================
+   SCROLLBAR PERSONALIZADA
+   ============================================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cinzento-claro);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul-medio);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--azul-escuro);
+}
